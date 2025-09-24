@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальная страница</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAoACgDASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAQFAQIGAwf/xAAmEAABAwQCAgIDAQAAAAAAAAABAgMEAAUREkciEyJBYRRxMlGB/8QAGAEAAgMAAAAAAAAAAAAAAAAAAwQBBQf/xAAeEQADAAMBAAMBAAAAAAAAAAAAAQIDERIEIUFhMf/aAAwDAQACEQMRAD8A9/HfFHHfEPFeRKufF9zS2q9XBwqcfkXfqpCdlE/HSQnXkH5J9pqT/wAX8bcj8k3FW1lmT4/g+VtfMcK2TvQ+/fOsfVRG13YUdP8AXZfp+KP5Ku1ulXGSvlizLutscF6lNRHZLjCN1qz5Wl7pSkBO6sAHYazkxGPYnJbp6Wn0uN8IvZfFfCvI9t5HutuuLV3ZS6zKQtLa1hKlqQCWxtOD6AKzXv8A5Y4MgczcQPwI7K4VyYeUmYUZJRrykFSeuz8K+h9HRAWdOHa7S8LuvOujxdq5PsllmXONF8l1aDz60TJcdOXJ7Y9ZWnoqOOe/vVLlNQz6dh9s6PtRlNhbLKSRt1lj2R1Hv6X8E9VGOOQHHnz6PXv9j8z61XZGOo/Qlh7CZe0ZlTwvPCEcccD2C7JCXpB5JOy/t1NjzMrcGykdVqKlOFxYHlK0gIJxjG/kFe7djZxpY+R+V7y6hS/7+PdDEjK1LFgLKFpjJLhH4r8nNPRaQkHBBxjfK7GWGkPeNKm1YlpKNmfUgAHj/YHf71l9n9/4P8A9kA+yNeR7rqDIlFSW/KzXhJLe4/hfK/A+g8nHoFTsP8ANF5F/wCYPMULjzgni6HI8Nc3jBEKS+d0vMwUIcJ7gKyhSJ3VRl11kE9JLDvIGftO6e6HQ4p0/wBcL8u2Lj5w3n9k3/mDh/kJ+4R7XxBxlJudyf8Ah3hDnylOlqNGfJc6JOqTrGJjVhkOdAAOvZHyNe3qHu9o4y3+8t+H/8QAIBABAAEEAgIDAAAAAAAAAAAAAQAREiExQWEQ0YGRof/aAAgBAQABPwMFxs65Z8T65Zb9O6fSqvd2JVNEXh4lAWYmhO7Ku19WnJDbC0fO6e+LqhLIh1Xqyy11n8zKqJMzKqJMzKqJMzKqJMzK');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            max-width: 400px;
+        }
+
+        .spotify-player {
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .link {
+            display: inline-block;
+            background: #1db954;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .link:hover {
+            background: #1ed760;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(29, 185, 84, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spotify-player">
+            <iframe src="https://open.spotify.com/embed/track/0NjW4SKY3gbfl2orl1p8hr" 
+                    width="100%" 
+                    height="352" 
+                    frameborder="0" 
+                    allowtransparency="true" 
+                    allow="encrypted-media">
+            </iframe>
+        </div>
+        
+        <a href="https://open.spotify.com/track/0NjW4SKY3gbfl2orl1p8hr?si=466ac6c1b73c4ec7" 
+           class="link" 
+           target="_blank">
+           Открыть в Spotify
+        </a>
+    </div>
+</body>
+</html>
